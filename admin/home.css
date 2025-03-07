@@ -1,0 +1,128 @@
+/* Resetting some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #FFEBF2; /* Soft pink background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Full height */
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    background-color: #FF4D9A; /* Soft vibrant pink */
+    padding: 15px 0;
+    /* position: fixed; Make the header fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FF80C3; /* Lighter pink on hover */
+}
+
+/* Container to center the divs */
+.content-container {
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Add space between the two boxes */
+    margin-top: 80px; /* Space after the fixed header */
+}
+
+/* Box styling for the divs */
+.box {
+    background-color: #F9E4D4; /* Soft peach background */
+    padding: 20px;
+    border-radius: 12px;
+    width: 150px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #D08570; /* Light brown */
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.box h4{
+    text-align: center;
+}
+
+/* Style for the spans inside boxes */
+.box span:first-child {
+    /* display: block; */
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+/* Hover effect for the boxes */
+.box:hover {
+    background-color: #F8C9B6; /* Softer peach shade */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin: 30px;
+    position: fixed;
+    bottom: 0;
+}
+
+footer h4 {
+    font-size: 1.2em;
+    color: #FF4D9A; /* Same pink as the header */
+    font-weight: normal;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 600px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer h4 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 400px) {
+    footer h4 {
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+
+

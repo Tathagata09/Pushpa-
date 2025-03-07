@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpa</title>
+    <link rel="stylesheet" href="adding.css">
+</head>
+<body onload="displayFlower()">
+    <div class="flower-background">
+        <!-- Table for adding new flowers -->
+        <table class="flower-table">
+            <tr>
+                <td>Update flower Details</td>
+            </tr>
+            <tr>
+                <td><input type="text" class="flower-input" placeholder="Enter flower name" id="name"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="flower-input" placeholder="Enter the price" id="price"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="flower-input" placeholder="Enter the URL" id="url"></td>
+            </tr>
+            <tr>
+                <td><button class="flower-button" onclick="update()">Update</button></td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <h4>Developed by @Tatha</h4>
+    </footer>
+
+    <script src="flowers.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

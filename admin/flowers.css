@@ -1,0 +1,175 @@
+/* Resetting some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #FFEBF2; /* Soft pink background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Full height */
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    background-color: #FF4D9A; /* Soft vibrant pink */
+    padding: 15px 0;
+    /* position: fixed; Make the header fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FF80C3; /* Lighter pink on hover */
+}
+
+/* Main container */
+.main {
+    margin-top: 80px; /* Space below header */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    color: #D08570;
+    margin-bottom: 20px;
+}
+.main a{
+    text-decoration: none;
+}
+
+/* Flower box styling */
+.box {
+    background-color: #F9E4D4; /* Soft peach background */
+    padding: 15px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.box div {
+    margin: 10px 0;
+}
+
+.box button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FF69B4; /* Pink buttons */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.box button:hover {
+    background-color: #FF80C3; /* Lighter pink on hover */
+}
+
+footer {
+    text-align: center;
+    margin: 30px;
+    bottom: 0;
+    margin-top: 350px;
+}
+
+footer h4 {
+    font-size: 1.2em;
+    color: #FF4D9A; /* Same pink as the header */
+    font-weight: normal;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0px;
+    margin-bottom: -14px;
+    width: 100%;
+    padding: 15px;
+    background-color: #FFFFFF; /* Clean white background for the search bar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for professionalism */
+    border-radius: 8px;
+}
+
+.search-container input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #D0D0D0; /* Light grey border for modern look */
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+    outline: none;
+    border-color: #FF4D9A; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(255, 77, 154, 0.5);
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #FF4D9A; /* Vibrant pink matching the header */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-container button:hover {
+    background-color: #FF80C3; /* Slightly lighter pink */
+    transform: translateY(-2px); /* Subtle hover lift */
+}
+
+.search-container button:active {
+    transform: translateY(0); /* Reset on click */
+    background-color: #FF4D9A;
+}
+
+
+
+

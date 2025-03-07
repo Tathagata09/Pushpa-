@@ -1,0 +1,94 @@
+/* Resetting some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFAF1; /* Light cream background */
+    color: #FF4081; /* Bright pink text */
+    padding: 20px;
+}
+
+/* Centering the content */
+.flower-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-top: -5%;
+}
+
+/* Table styles */
+.flower-table {
+    background-color: #FFEBEE; /* Bright pink background */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+.flower-table td {
+    font-size: 20px;
+    color: #D500F9; /* Bright purple text */
+    padding: 12px 0;
+}
+
+.flower-table input {
+    width: 90%;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #F50057; /* Bright red border */
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.flower-table input:focus {
+    border-color: #D500F9; /* Bright purple border on focus */
+}
+
+/* Button style with hover effects */
+.flower-button {
+    background-color: #FF80AB; /* Bright pink background */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.flower-button:hover {
+    background-color: #F50057; /* Bright red */
+    color: #FFF; /* White text */
+    transform: scale(1.1); /* Slight scaling on hover */
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+}
+
+footer h4 {
+    text-align: center;
+    font-size: 1.2em;
+    color: #FF4D9A; /* Same pink as the header */
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+

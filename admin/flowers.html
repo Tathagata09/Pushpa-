@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpa</title>
+    <link rel="stylesheet" href="flowers.css"> <!-- Link to the external CSS -->
+</head>
+<body onload="display()">
+    <!-- Header section with navigation links -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Flowers</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#" onclick="logout()">Log out</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search flowers..." onkeyup="searchFlower()">
+            <button onclick="searchFlower()">Search</button>
+        </div>
+    </header>
+
+    <h4>Add new flower: <a href="adding.html">Click here</a></h4>
+    <div class="main" id="result">
+        
+
+        
+        <!-- Flower boxes
+        <div class="box">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/full-frame-shot-of-pink-roses-royalty-free-image-629040043-1554828317.jpg?crop=0.66942xw:1xh;center,top&resize=980:*" alt="">
+            <div><span>Rose</span>  <span>$2</span></div>
+            <div><button>Edit</button> <button>Delete</button></div>
+        </div>
+
+        <div class="box">
+            <img src="https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153840158012080172.jpeg?x-oss-process=image/format,webp/resize,s_300&v=1.0" alt="">
+            <div><span>Sunflower</span> <span>$4</span></div>
+            <div><button>Edit</button> <button>Delete</button></div>
+        </div>
+
+        <div class="box">
+            <img src="https://www.whiteflowerfarm.com/mas_assets/cache/image/9/4/e/a/38122.Jpg" alt="">
+            <div><span>Tulip</span> <span>$6</span></div>
+            <div><button>Edit</button> <button>Delete</button></div>
+        </div>
+
+        <div class="box">
+            <img src="https://m.media-amazon.com/images/I/71idNjwx7QL._AC_UF1000,1000_QL80_.jpg" alt="">
+            <div><span>Marigold</span> <span>$1</span></div>
+            <div><button>Edit</button> <button>Delete</button></div>
+        </div>
+
+        <div class="box">
+            <img src="https://m.media-amazon.com/images/I/51wed31JfqL._AC_UF1000,1000_QL80_.jpg" alt="">
+            <div><span>Lily</span> <span>$3</span></div>
+            <div><button>Edit</button> <button>Delete</button></div>
+        </div> -->
+    </div>
+
+    <footer>
+        <h4>Developed by @Tatha</h4>
+    </footer>
+    <script src="flowers.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
