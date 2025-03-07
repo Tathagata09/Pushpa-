@@ -1,0 +1,134 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style for centering the content */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FCE4EC; /* Light pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    flex-direction: column; /* Allows space for the fixed header */
+}
+
+header {
+    width: 100%;
+    background-color: #FF4D9A; /* Soft vibrant pink */
+    padding: 15px 0;
+    position: fixed; /* Make the header fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FF80C3; /* Lighter pink on hover */
+}
+
+/* Container for the login form */
+.login-container {
+    background-color: #FFF0F6; /* Very light pink background for the container */
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 380px; /* Make sure the form doesn't stretch too wide */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 80px; /* Add space below the fixed header */
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5em;
+    color: #FF80AB; /* Soft but vibrant pink color */
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive; /* Fun, girly font */
+}
+
+/* Styling for the form input groups */
+.input-group {
+    margin-bottom: 15px;
+}
+
+/* Input Fields Styling */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 25px;
+    border: 2px solid #FF80AB; /* Soft pink border */
+    background-color: #FFEBF0; /* Light pink input background */
+    outline: none;
+    color: #FF80AB; /* Pink-colored text inside the inputs */
+}
+
+.input-group input::placeholder {
+    color: #F8BBD0; /* Subtle pink placeholder text */
+}
+
+/* Button Styling */
+.input-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF80AB; /* Vibrant pink background */
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+    background-color: #FF4081; /* Darker pink on hover */
+}
+
+.new-user-link {
+    display: block;
+    margin-top: 15px;
+    font-size: 1em;
+    color: #FF80AB; /* Soft pink color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.new-user-link:hover {
+    color: #FF4081; /* Darker pink on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%; /* Make the container take more space on smaller screens */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em; /* Adjust the font size for the title */
+    }
+}

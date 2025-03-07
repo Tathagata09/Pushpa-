@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css"> <!-- Link to external CSS -->
+</head>
+<body onload="displayMenu()">
+    <header>
+        <nav>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li id="login"><a href="login.html">Login</a></li>
+
+                <li id="cart"><a href="cart.html">Cart</a></li>
+                <li id="profile"><a href="profile.html">Profile</a></li>                
+                <li id="logout"><a href="#" onclick="logout()">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Addresses</a></li>
+                <li><a href="#">Payment Methods</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+
+        <section class="profile-details">
+            <div class="profile-header">
+                <img src="picture.jpeg" alt="Profile Picture" class="profile-picture">
+                <div>
+                    <h1>Tathagata Munshi</h1>
+                    <p>Email: totomunshi16@.com</p>
+                    <p>Phone: +91 9748 758 747</p>
+                </div>
+                <button class="edit-profile-btn">Edit Profile</button>
+            </div>
+
+            <div class="orders-section">
+                <h2>Your Orders</h2>
+                <ul class="orders-list">
+                    <li>
+                        <div>
+                            <strong>Order ID:</strong> 12345 <br>
+                            <strong>Item:</strong> Rose
+                        </div>
+                        <span class="status">Delivered</span>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>Order ID:</strong> 12346 <br>
+                            <strong>Item:</strong> Sunflower
+                        </div>
+                        <span class="status">Shipped</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="user.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpa</title>
+    <link rel="stylesheet" href="login.css"> <!-- Link to the external CSS -->
+    
+</head>
+<body onload="displayMenu()">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li id="login"><a href="login.html">Login</a></li>
+
+                <li id="cart"><a href="cart.html">Cart</a></li>
+                <li id="profile"><a href="profile.html">Profile</a></li>                
+                <li id="logout"><a href="#" onclick="logout()">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <div class="login-container">
+        <h1>User Login</h1>
+        <form onsubmit="event.preventDefault(); login()">
+            <div class="input-group">
+                <input type="email" placeholder="Enter your email" id="mail" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Enter your password" id="pass" required>
+            </div>
+            <div class="input-group">
+                <button type="submit">Log in</button>
+            </div>
+        </form>
+    </div>
+    <a href="registration.html" class="new-user-link">New user? Register here</a>
+    <a href="forget.html" class="new-user-link">Forget password</a>
+
+
+    <script src="user.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
